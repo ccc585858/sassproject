@@ -471,4 +471,95 @@ header nav ul li:hover {
   height: 300px;
 }
 
+.a1_bg {
+  background-image: url("./images/a1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 540px;
+  background-color: blue;
+}
+
+.a2_bg {
+  background-image: url("./images/a2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 540px;
+  background-color: blue;
+}
+
+.a3_bg {
+  background-image: url("./images/a3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 540px;
+  background-color: blue;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+span {
+  font-size: 16px;
+}
+
+div {
+  font-size: 20px;
+}
+
+.box {
+  font-size: 36px;
+}
+
+.primary-font {
+  color: orange;
+}
+
+.primary-bg {
+  background-color: orange;
+}
+
+.secondary-font {
+  color: green;
+}
+
+.secondary-bg {
+  background-color: green;
+}
+
+.third-font {
+  color: brown;
+}
+
+.third-bg {
+  background-color: brown;
+}
+
+.basic-font {
+  color: #333;
+}
+
+.basic-bg {
+  background-color: #333;
+}
+
+.h1-font {
+  color: #999;
+}
+
+.h1-bg {
+  background-color: #999;
+}
+
 /*# sourceMappingURL=style.css.map */

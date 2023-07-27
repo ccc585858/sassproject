@@ -74,3 +74,57 @@
 
 // @include push(20, left);
 // @include push(20, top);
+
+// @each
+
+// var list
+// $list: a1 a2 b1 b2 s1;
+@mixin img_bg($list) {
+  @each $i in $list {
+    .#{$i}_bg {
+      background-image: url("./images/#{$i}.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      @content; // 可以呼叫函式時後面繼續增加設定;
+    }
+  }
+}
+
+@include img_bg(a1 a2 a3) {
+  // 因為函式本身有 @content 所以可以在後面繼續增加設定
+  height: 540px;
+  background-color: blue;
+}
+
+//var map
+$title_size: (
+  h1: 50px,
+  h2: 40px,
+  h3: 30px,
+  span: 16px,
+  div: 20px,
+  ".box": 36px,
+);
+
+@each $key, $value in $title_size {
+  #{$key} {
+    font-size: $value;
+  }
+}
+
+$color: (
+  primary: orange,
+  secondary: green,
+  third: brown,
+  basic: #333,
+  h1: #999,
+);
+@each $k, $val in $color {
+  .#{$k}-font {
+    color: $val;
+  }
+  .#{$k}-bg {
+    background-color: $val;
+  }
+}
